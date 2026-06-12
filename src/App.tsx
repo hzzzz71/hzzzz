@@ -9,11 +9,12 @@ import { defaultPortfolio, defaultThemes } from './data/defaultPortfolio';
 import LoadingScreen from './components/LoadingScreen';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
+import InternshipSection from './components/InternshipSection';
 import FeaturedProjects from './components/FeaturedProjects';
 import LogsSection from './components/LogsSection';
 import Timeline from './components/Timeline';
 import ExploreGallery from './components/ExploreGallery';
-import StatsSection from './components/StatsSection';
+import SkillsSection from './components/SkillsSection';
 import ContactFooter from './components/ContactFooter';
 
 // Dynamic Modals and Control Drawers
@@ -82,7 +83,7 @@ export default function App() {
     if (isLoading) return;
 
     const handleScroll = () => {
-      const sections = ['hero', 'work', 'timeline', 'explore', 'stats', 'contact'];
+      const sections = ['hero', 'internships', 'projects', 'skills', 'achievements', 'timeline', 'explore', 'contact'];
       const scrollPos = window.scrollY + window.innerHeight / 3;
 
       for (const sectionId of sections) {
@@ -160,18 +161,21 @@ export default function App() {
 
           {/* 3. HERO VIEWPORT */}
           <HeroSection 
-            onViewWorkClick={() => scrollToSection('work')}
+            onViewWorkClick={() => scrollToSection('internships')}
             onContactClick={() => scrollToSection('contact')}
           />
+
+          {/* 3.5. INTERNSHIP EXPERIENCE TIMELINE */}
+          <InternshipSection />
 
           {/* 4. SELECTED PROJECTS BENTO SECTION */}
           <FeaturedProjects onViewProject={setSelectedProject} />
 
-          {/* 5. HORIZONTAL PILL LOGS */}
-          <LogsSection />
+          {/* 5. PERSONAL SKILLS ROLLING CAROUSEL */}
+          <SkillsSection />
 
-          {/* 6. STATS METRICS DISPLAY */}
-          <StatsSection />
+          {/* 6. PERSONAL ACHIEVEMENTS SECTION */}
+          <LogsSection />
 
           {/* 7. RESUME CAREER TIMELINE */}
           <Timeline timelineEvents={config.timeline} />

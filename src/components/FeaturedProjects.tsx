@@ -57,7 +57,7 @@ export default function FeaturedProjects({ onViewProject }: FeaturedProjectsProp
   ];
 
   return (
-    <section id="work" className="py-24 bg-bg relative z-10 border-t border-stroke/30">
+    <section id="projects" className="py-24 bg-bg relative z-10 border-t border-stroke/30">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
         
         {/* Header containing InView/initial animation wrapper */}
@@ -77,10 +77,6 @@ export default function FeaturedProjects({ onViewProject }: FeaturedProjectsProp
             <h2 className="font-display italic text-4xl md:text-5xl lg:text-6xl text-text-primary tracking-tight">
               精选项目
             </h2>
-            
-            <p className="text-sm text-muted max-w-sm mt-3 leading-relaxed">
-              我从构想到上线参与过的项目精选。秉持极简秩序，赋予系统生命的数字微光。
-            </p>
           </div>
 
           {/* View all button (visible on desktop) */}

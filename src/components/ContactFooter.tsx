@@ -92,10 +92,6 @@ export default function ContactFooter() {
 
         {/* 3. CTA Action Area */}
         <div className="my-auto flex flex-col items-center text-center px-6">
-          <p className="text-xs text-muted uppercase tracking-[0.3em] mb-4">
-            LET'S WORK TOGETHER_
-          </p>
-          
           <h3 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display italic tracking-tight text-text-primary mb-10 max-w-2xl leading-tight">
             让想法变成令人赞叹的奇妙现实
           </h3>
@@ -117,9 +113,6 @@ export default function ContactFooter() {
 
         {/* 4. Footer Base bar */}
         <div className="mt-20 max-w-[1200px] w-full mx-auto px-6 md:px-10 lg:px-16 pt-8 border-t border-stroke/20 flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="text-xs text-muted font-mono tracking-widest uppercase">
-            © 2026 Michael Smith. All rights reserved.
-          </div>
         </div>
       </div>
     </section>

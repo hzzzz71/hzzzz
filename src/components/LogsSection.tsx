@@ -14,41 +14,41 @@ interface JournalEntry {
 export default function LogsSection() {
   const entries: JournalEntry[] = [
     {
-      id: 'log-1',
-      title: "硬核极简主义与动态物理阻尼的交互调和",
-      summary: "系统地将牛顿惯性与弹簧共振公式引入数字面板，创造出真正具有骨架张力与直观触感的微米级滑动过渡。",
+      id: 'achieve-1',
+      title: "Apple Design Award 创意设计学生先锋提名",
+      summary: "凭借极富物理阻尼回弹张力的手势界面与非线性黄金分割网格交互系统，斩获年度数字艺术提名。",
       imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=150&auto=format&fit=crop",
-      readTime: "5 min read",
-      date: "2026-06-12"
+      readTime: "Design Nominee",
+      date: "2026-04"
     },
     {
-      id: 'log-2',
-      title: "无感网格排版：探讨黄金分割在低光源下的视觉聚焦",
-      summary: "在全暗高对比面板中，利用非对称对齐以及微妙的负空间调节，让读者在不产生视觉疲劳的前提下聚焦最核心指标。",
+      id: 'achieve-2',
+      title: "GitHub Open Source Core Contributor 卓越贡献奖",
+      summary: "积极推动 Next.js 边缘端路由缓存机制算法的低算力高并发改造，项目合并代码影响数百万网页启动速度。",
       imageUrl: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=150&auto=format&fit=crop",
-      readTime: "8 min read",
-      date: "2026-06-08"
+      readTime: "Top 1% Contributor",
+      date: "2025-11"
     },
     {
-      id: 'log-3',
-      title: "流媒体视频体验中HLS播放器的低延迟调优策略",
-      summary: "阐述在现代混合SPA应用中，利用分片预加载和浏览器底层媒体源扩展(MSE)实现多终端无缝高清自动播放的技术内幕。",
+      id: 'achieve-3',
+      title: "字节跳动优秀实习个人 & 「抖音季度设计之星」",
+      summary: "主导完成了全物理机制弹簧算子的极简化组件化重写，在极低端海外安卓设备亦实现了无感 60 帧触控反馈。",
       imageUrl: "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=150&auto=format&fit=crop",
-      readTime: "4 min read",
-      date: "2026-05-30"
+      readTime: "Star Intern",
+      date: "2025-07"
     },
     {
-      id: 'log-4',
-      title: "代码与直觉：在AI时代坚持手工艺编程的工匠精神",
-      summary: "为什么在自动化大面积普及的当下，手工打磨的界面动效、像素级阴影对齐和干净的代码架构依然是触动深层情感的秘钥。",
+      id: 'achieve-4',
+      title: "“深蓝底座杯” 全国数字交互设计与能效攻防赛 冠军",
+      summary: "通过将 WebGL 三维投影管线的多线程离合化重叠，极大缩减海量点云渲染能耗与动画触发卡顿率。",
       imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=150&auto=format&fit=crop",
-      readTime: "6 min read",
-      date: "2026-05-15"
+      readTime: "Championship",
+      date: "2024-12"
     }
   ];
 
   return (
-    <section id="logs" className="py-24 bg-bg relative z-10 border-t border-stroke/30">
+    <section id="achievements" className="py-24 bg-bg relative z-10 border-t border-stroke/30">
       <div className="max-w-[1200px] mx-auto px-6 md:px-10 lg:px-16">
         
         {/* Same Header Pattern as Selected Projects */}
@@ -62,16 +62,12 @@ export default function LogsSection() {
           <div>
             <div className="flex items-center gap-3 text-muted text-xs uppercase tracking-[0.3em] mb-4">
               <span className="w-8 h-[1px] bg-stroke/60 inline-block" />
-              <span>Recent Thoughts</span>
+              <span>Personal Achievements</span>
             </div>
             
             <h2 className="font-display italic text-4xl md:text-5xl lg:text-6xl text-text-primary tracking-tight">
-              最近想法
+              个人成就
             </h2>
-            
-            <p className="text-sm text-muted max-w-sm mt-3 leading-relaxed">
-              关于技术架构、设计美学和极简主义探索的学术记录与日常札记。
-            </p>
           </div>
 
           {/* View all button */}
@@ -79,7 +75,7 @@ export default function LogsSection() {
             type="button"
             className="flex items-center justify-center gap-2 rounded-full border border-stroke bg-surface hover:bg-bg hover:border-text-primary/60 hover:text-text-primary text-text-primary/70 text-xs font-semibold px-6 py-3 cursor-pointer transition-all duration-300 group"
           >
-            <span>查看全部想法</span>
+            <span>查看全部成就</span>
             <span className="transition-transform group-hover:translate-x-1 font-sans">→</span>
           </button>
         </motion.div>
@@ -119,11 +115,6 @@ export default function LogsSection() {
 
               {/* Right metadata panel */}
               <div className="flex items-center gap-4 sm:gap-6 mt-4 sm:mt-0 pl-16 sm:pl-0 border-t border-stroke/15 sm:border-0 pt-3 sm:pt-0">
-                <div className="flex items-center gap-1.5 text-[10px] sm:text-xs text-muted font-mono">
-                  <Clock className="w-3.5 h-3.5 text-muted/50" />
-                  <span>{entry.readTime}</span>
-                </div>
-
                 <div className="flex items-center gap-1.5 text-[10px] sm:text-xs text-muted font-mono">
                   <Calendar className="w-3.5 h-3.5 text-muted/50" />
                   <span>{entry.date}</span>

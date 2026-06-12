@@ -101,3 +101,34 @@ html, body {
   animation: gradient-offset 6s infinite linear;
 }
 
+/* Infinite Scrolling Grid Animations */
+@keyframes infiniteScrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33333%);
+  }
+}
+
+@keyframes infiniteScrollRight {
+  0% {
+    transform: translateX(-33.33333%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-infinite-scroll-left {
+  display: flex;
+  width: max-content;
+  animation: infiniteScrollLeft 35s linear infinite;
+}
+
+.animate-infinite-scroll-right {
+  display: flex;
+  width: max-content;
+  animation: infiniteScrollRight 35s linear infinite;
+}
+

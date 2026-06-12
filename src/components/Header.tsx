@@ -35,36 +35,66 @@ export default function Header({
         }`}
       >
         <div className="flex items-center gap-1 sm:gap-1.5">
-          {/* 2. Navigation items: [首页 (Home), 工作 (Work), 简历 (Resume)] */}
-          <div className="flex items-center gap-0.5 sm:gap-1">
+          {/* 2. Navigation items */}
+          <div className="flex items-center gap-0.5 sm:gap-1.5 flex-wrap justify-center">
             <button
               onClick={() => onNavClick('hero')}
-              className={`text-xs sm:text-sm font-medium rounded-full px-3.5 py-1.5 sm:py-2 transition-all cursor-pointer ${
+              className={`text-[10px] sm:text-xs md:text-sm font-medium rounded-full px-2 sm:px-3.5 py-1 sm:py-2 transition-all cursor-pointer ${
                 activeSection === 'hero' 
-                  ? 'text-text-primary bg-stroke/60 font-semibold' 
+                  ? 'text-text-primary bg-stroke/60 font-bold' 
                   : 'text-muted hover:text-text-primary hover:bg-stroke/30'
               }`}
             >
               首页
             </button>
             <button
-              onClick={() => onNavClick('work')}
-              className={`text-xs sm:text-sm font-medium rounded-full px-3.5 py-1.5 sm:py-2 transition-all cursor-pointer ${
-                activeSection === 'work' 
-                  ? 'text-text-primary bg-stroke/60 font-semibold' 
+              onClick={() => onNavClick('internships')}
+              className={`text-[10px] sm:text-xs md:text-sm font-medium rounded-full px-2 sm:px-3.5 py-1 sm:py-2 transition-all cursor-pointer ${
+                activeSection === 'internships' 
+                  ? 'text-text-primary bg-stroke/60 font-bold' 
                   : 'text-muted hover:text-text-primary hover:bg-stroke/30'
               }`}
             >
-              工作
+              实习
+            </button>
+            <button
+              onClick={() => onNavClick('projects')}
+              className={`text-[10px] sm:text-xs md:text-sm font-medium rounded-full px-2 sm:px-3.5 py-1 sm:py-2 transition-all cursor-pointer ${
+                activeSection === 'projects' 
+                  ? 'text-text-primary bg-stroke/60 font-bold' 
+                  : 'text-muted hover:text-text-primary hover:bg-stroke/30'
+              }`}
+            >
+              项目
+            </button>
+            <button
+              onClick={() => onNavClick('skills')}
+              className={`text-[10px] sm:text-xs md:text-sm font-medium rounded-full px-2 sm:px-3.5 py-1 sm:py-2 transition-all cursor-pointer ${
+                activeSection === 'skills' 
+                  ? 'text-text-primary bg-stroke/60 font-bold' 
+                  : 'text-muted hover:text-text-primary hover:bg-stroke/30'
+              }`}
+            >
+              技能
+            </button>
+            <button
+              onClick={() => onNavClick('achievements')}
+              className={`text-[10px] sm:text-xs md:text-sm font-medium rounded-full px-2 sm:px-3.5 py-1 sm:py-2 transition-all cursor-pointer ${
+                activeSection === 'achievements' 
+                  ? 'text-text-primary bg-stroke/60 font-bold' 
+                  : 'text-muted hover:text-text-primary hover:bg-stroke/30'
+              }`}
+            >
+              成就
             </button>
             <button
               onClick={() => {
                 onResumeClick();
                 onNavClick('resume');
               }}
-              className={`text-xs sm:text-sm font-medium rounded-full px-3.5 py-1.5 sm:py-2 transition-all cursor-pointer ${
+              className={`text-[10px] sm:text-xs md:text-sm font-medium rounded-full px-2 sm:px-3.5 py-1 sm:py-2 transition-all cursor-pointer ${
                 activeSection === 'resume' 
-                  ? 'text-text-primary bg-stroke/60 font-semibold' 
+                  ? 'text-text-primary bg-stroke/60 font-bold' 
                   : 'text-muted hover:text-text-primary hover:bg-stroke/30'
               }`}
             >

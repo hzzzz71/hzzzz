@@ -112,7 +112,7 @@ export default function HeroSection({ onViewWorkClick, onContactClick }: HeroSec
           >
             <span className="absolute inset-[-2px] rounded-full accent-gradient opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-20 animate-gradient-offset" />
             <span className="absolute inset-[1px] rounded-full bg-bg opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10" />
-            <span className="relative z-10">查看作品</span>
+            <span className="relative z-10">查看经历</span>
           </button>
 
           {/* Action stroke button */}
