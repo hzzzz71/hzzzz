@@ -67,9 +67,9 @@ export default function ContactFooter() {
           muted
           loop
           playsInline
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 scale-y-[-1] brightness-50 opacity-40"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 scale-y-[-1] brightness-110 contrast-95 opacity-25"
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-transparent" />
       </div>
 
       <div className="relative z-10 w-full flex flex-col justify-between h-full min-h-[450px]">
@@ -117,28 +117,8 @@ export default function ContactFooter() {
 
         {/* 4. Footer Base bar */}
         <div className="mt-20 max-w-[1200px] w-full mx-auto px-6 md:px-10 lg:px-16 pt-8 border-t border-stroke/20 flex flex-col sm:flex-row items-center justify-between gap-6">
-          {/* Social Links */}
-          <div className="flex items-center gap-6 text-xs text-muted">
-            {['Twitter', 'LinkedIn', 'Dribbble', 'GitHub'].map((social, i) => (
-              <a
-                key={i}
-                href="#"
-                className="hover:text-text-primary transition-colors tracking-widest uppercase font-mono text-[10px]"
-              >
-                {social}
-              </a>
-            ))}
-          </div>
-
-          {/* Active status pulse light */}
-          <div className="flex items-center gap-2.5 bg-surface/50 border border-stroke rounded-full px-4 py-1.5 backdrop-blur-sm shadow-sm">
-            <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-            </span>
-            <span className="text-[11px] font-medium text-[#adadad] tracking-wide">
-              项目可用 (Available for client projects)
-            </span>
+          <div className="text-xs text-muted font-mono tracking-widest uppercase">
+            © 2026 Michael Smith. All rights reserved.
           </div>
         </div>
       </div>

@@ -30,28 +30,11 @@ export default function Header({
     <header className="fixed top-0 left-0 right-0 z-50 flex justify-center pt-4 md:pt-6 px-4">
       {/* Internal Navigation Shell */}
       <nav 
-        className={`inline-flex items-center rounded-full border border-white/10 bg-surface/80 px-2.5 py-1.5 md:py-2 backdrop-blur-md transition-all duration-300 ${
-          isScrolled ? 'shadow-[0_10px_30px_rgba(0,0,0,0.6)] border-white/15 bg-surface/90 scale-[0.98]' : ''
+        className={`inline-flex items-center rounded-full border border-stroke/40 bg-surface/80 px-2.5 py-1.5 md:py-2 backdrop-blur-md transition-all duration-300 ${
+          isScrolled ? 'shadow-[0_10px_25px_rgba(0,0,0,0.05)] border-stroke/65 bg-surface/90 scale-[0.98]' : ''
         }`}
       >
         <div className="flex items-center gap-1 sm:gap-1.5">
-          {/* 1. Logo Unit */}
-          <button 
-            type="button"
-            onClick={() => onNavClick('hero')}
-            className="group relative w-9 h-9 rounded-full flex items-center justify-center p-[1px] overflow-hidden cursor-pointer transition-transform duration-300 hover:scale-110"
-          >
-            {/* Rotate Gradient Bezel on hover */}
-            <span className="absolute inset-0 accent-gradient rounded-full transition-transform duration-500 group-hover:rotate-180" />
-            <span className="absolute inset-[1px] bg-bg rounded-full flex items-center justify-center" />
-            <span className="relative z-10 font-display italic text-text-primary text-[13px] font-bold tracking-tight">
-              JA
-            </span>
-          </button>
-
-          {/* Spacer Divider (Hidden on mobile) */}
-          <div className="hidden sm:block w-px h-5 bg-stroke mx-1" />
-
           {/* 2. Navigation items: [首页 (Home), 工作 (Work), 简历 (Resume)] */}
           <div className="flex items-center gap-0.5 sm:gap-1">
             <button

@@ -65,11 +65,11 @@ export default function HeroSection({ onViewWorkClick, onContactClick }: HeroSec
           muted
           loop
           playsInline
-          className="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 brightness-75 scale-105"
+          className="absolute top-1/2 left-1/2 min-w-full min-h-full object-cover -translate-x-1/2 -translate-y-1/2 brightness-110 contrast-95 opacity-25 scale-105"
         />
-        {/* Soft dark backdrop overlay */}
-        <div className="absolute inset-0 bg-black/20" />
-        {/* Smooth dark vignette fading to background page elements */}
+        {/* Soft bright backdrop overlay - completely transparent */}
+        <div className="absolute inset-0 bg-transparent" />
+        {/* Smooth light vignette fading to background page elements */}
         <div className="absolute bottom-0 left-0 right-0 h-48 bg-gradient-to-t from-bg to-transparent" />
       </div>
 
@@ -131,7 +131,7 @@ export default function HeroSection({ onViewWorkClick, onContactClick }: HeroSec
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3 select-none pointer-events-none z-10">
         <span className="text-[10px] tracking-[0.34em] text-muted uppercase font-mono">SCROLL</span>
         <div className="w-[1px] h-10 bg-stroke/60 relative overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-1/2 bg-white rounded-full animate-scroll-down" />
+          <div className="absolute top-0 left-0 w-full h-1/2 bg-text-primary rounded-full animate-scroll-down" />
         </div>
       </div>
     </section>
