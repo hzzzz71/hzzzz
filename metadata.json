@@ -1,0 +1,6 @@
+{
+  "name": "Interactive Designer Portfolio",
+  "description": "A highly polished, customizable digital experience portfolio for creators, developers, and designers featuring animated floating gradients, glassmorphism cards, interactive timeline, and full live editing support.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
